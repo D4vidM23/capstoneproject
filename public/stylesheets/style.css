@@ -39,6 +39,7 @@ a {
   width: 2500px;
   font-size: 30px;
   font-family: "Bahnschrift";
+  font-weight: lighter;
 }
 
 .dropdowns {
@@ -48,6 +49,7 @@ a {
   margin-top: 0px;
   margin-left: -60px;
   width: 2500px;
+  height: 12px;
   font-size: 15px;
   font-family: "Bahnschrift";
   display: flex;
@@ -73,4 +75,15 @@ a {
   color: black;
   margin-top: 130px;
   height: 190px;
+}
+
+.cardbody {
+  height: 300px;
+  width: 240px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-right: 60px;
+  border-radius: 15px;
+  background-color: #cecece;
+  border-color: #cecece;
 }
