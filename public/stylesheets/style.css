@@ -77,17 +77,53 @@ a {
   height: 190px;
 }
 
+.goback1 {
+  text-decoration: none;
+  font-weight: bolder;
+  color: black;
+  margin-top: 100px;
+  height: 20px;
+  width: 80px;
+}
+
 .cardbody {
-  height: 300px;
-  width: 240px;
+  height: 360px;
+  width: 270px;
   margin-top: 60px;
   margin-bottom: 60px;
   margin-right: 60px;
   border-radius: 15px;
-  background-color: #cecece;
-  border-color: #cecece;
+  background-color: #f1f1f1;
+  border-color: #efeff0;
 }
 
+.image {
+  margin-bottom: -20px;
+  margin-left: -325px;
+  height: 200px;
+  width: 260px;
+  border-radius: 15px;
+}
+
+.creator_name{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-family: "Bahnschrift";
+}
+
+.product_name{
+  margin-top: -200px;
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Bahnschrift";
+  font-weight: bolder;
+}
+
+.description{
+  margin-top: 5px;
+  margin-left: 10px;
+}
 .form-input {
   padding: 10px;
   align-items: center;
@@ -98,3 +134,4 @@ input {
 .form-container {
   margin-top: 250px;
 }
+

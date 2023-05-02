@@ -12,11 +12,14 @@ block content
 
 
     div.rocksforsale
-        button.cardbody
-            div.image=rock.image
-            div.product_name
-            div.creator_name
-            div.description
+
+        each rock in rocks
+
+            button.cardbody=rock.id
+            img.image(src=rock.image)
+            div.product_name=rock.product_name
+            div.creator_name=rock.creator_name
+            div.description=rock.description
 
 
-    a(href='/').goback Go Back
+    button.a(href='/').goback1 Go Back
