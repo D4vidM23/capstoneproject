@@ -1,3 +1,24 @@
 mixin rockCard(rock, buttonText, saveUrl, cancelUrl, deleteUrl)
-    form(action=saveUrl method='post')
-        div.input-container.wide
+
+    div.form-container
+        form(action=saveUrl method='post')
+
+            div.form-input
+                label(for='creator_name') Creator Name
+                input(id='creator_name' name='creator_name' value= rock)
+
+            div.form-input
+                label(for='product_name') Product Name
+                input(id='product_name' name='product_name' value= rock)
+
+            div.form-input
+                label(for='image') Image
+                input(id='image' name='image' value= rock)
+
+            div.form-input
+                label(for='description') Description
+                input(id='description' name='description' value= rock)
+
+            div.form-buttons
+                button.button(href=cancelUrl) Cancel
+                button.button.primary(type='submit') Save

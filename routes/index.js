@@ -7,8 +7,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/rocks', rockController.viewAll)
-router.get('/register', userController.renderRegistrationForm)
+router.get('/rocks', rockController.viewAll);
+router.get('/add', rockController.renderAddForm)
+
+router.get('/register', userController.renderRegistrationForm);
 router.post('/register', userController.register);
 
 router.get('/service', rockController.viewService)

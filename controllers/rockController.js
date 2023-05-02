@@ -9,3 +9,13 @@ module.exports.viewService = async function (req, res) {
     const rocks = await Rock.findAll();
     res.render('misc/customerService', {rocks});
 };
+
+module.exports.renderAddForm = function(req, res){
+    const rock = {
+        creator_name: '',
+        product_name: '',
+        image: '',
+        description: '',
+    }
+    res.render('viewRocks/add', rock);
+}

@@ -1,5 +1,5 @@
 const {User} = require('../models');
-// const md5 = require('md5');
+const md5 = require('md5');
 // const passport = require('passport');
 
 module.exports.renderRegistrationForm = async function(req, res) {

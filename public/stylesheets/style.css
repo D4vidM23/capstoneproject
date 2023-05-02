@@ -87,3 +87,14 @@ a {
   background-color: #cecece;
   border-color: #cecece;
 }
+
+.form-input {
+  padding: 10px;
+  align-items: center;
+}
+input {
+  margin-left: 10px;
+}
+.form-container {
+  margin-top: 250px;
+}
