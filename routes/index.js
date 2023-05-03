@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/rocks', rockController.viewAll);
+router.get('/profile', rockController.viewRock);
 router.get('/add', rockController.renderAddForm)
 
 router.get('/register', userController.renderRegistrationForm);

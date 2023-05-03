@@ -14,12 +14,12 @@ block content
     div.rocksforsale
 
         each rock in rocks
+            a.button(href="profile")
+                button.cardbody(href="service")=rock.id
+                img.image(src=rock.image)
+                div.product_name=rock.product_name
+                div.creator_name=rock.creator_name
+                div.description=rock.description
 
-            button.cardbody=rock.id
-            img.image(src=rock.image)
-            div.product_name=rock.product_name
-            div.creator_name=rock.creator_name
-            div.description=rock.description
-
-
-    button.a(href='/').goback1 Go Back
+    a.button(href="/")
+        button(href='/').goback1 Go Back
