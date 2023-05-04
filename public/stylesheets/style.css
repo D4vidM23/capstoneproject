@@ -189,6 +189,61 @@ input {
   width: 800px;
 }
 
-.desc2{
+.desc2 {
   padding: 10px;
+}
+
+.theprice {
+  margin-left: 10px;
+  margin-top: -18px;
+  font-family: "Bahnschrift";
+  font-size: 15px;
+}
+
+.theprice2 {
+  margin-left: 5px;
+  margin-top: -19px;
+  font-family: "Bahnschrift";
+  font-size: 15px;
+}
+
+.perton {
+  margin-top: -19px;
+  margin-left: 30px;
+  font-family: "Bahnschrift";
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sign {
+  margin-left: 600px;
+  margin-top: 10px;
+  font-family: "Bahnschrift";
+  font-size: 15px;
+}
+
+.dot {
+  margin-left: 17px;
+  margin-top: -23px;
+  font-family: "Bahnschrift";
+  font-size: 20px;
+}
+
+.goback2 {
+  text-decoration: none;
+  color: black;
+  font-family: "Bahnschrift";
+  height: 200px;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+.gobackbutton {
+  text-decoration: none;
+  color: black;
+  font-family: "Bahnschrift";
+  height: 30px;
+  width: 80px;
+  margin-top: 80px;
+  margin-left: 0px;
 }
