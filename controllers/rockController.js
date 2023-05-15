@@ -11,8 +11,8 @@ module.exports.viewService = async function (req, res) {
 };
 
 module.exports.viewRock= async function(req, res){
-    const rocks = await Rock.findAll();
-    res.render('viewRocks/view', {rocks});
+    const rock = await Rock.findByPk(req.params.id);
+    res.render(`viewRocks/view`, {rock});
 }
 
 

@@ -135,6 +135,7 @@ a {
   margin-left: 10px;
   text-decoration: none;
   color: black;
+  width:250px;
 }
 .form-input {
   padding: 10px;
@@ -194,22 +195,23 @@ input {
 }
 
 .theprice {
+  margin-right: 10px;
   margin-left: 10px;
   margin-top: -18px;
   font-family: "Bahnschrift";
   font-size: 15px;
 }
 
-.theprice2 {
-  margin-left: 5px;
-  margin-top: -19px;
-  font-family: "Bahnschrift";
-  font-size: 15px;
-}
+/*.theprice2 {*/
+/*  margin-left: 15px;*/
+/*  margin-top: -19px;*/
+/*  font-family: "Bahnschrift";*/
+/*  font-size: 15px;*/
+/*}*/
 
 .perton {
   margin-top: -19px;
-  margin-left: 30px;
+  margin-left: 35px;
   font-family: "Bahnschrift";
   font-size: 15px;
   font-weight: bold;
@@ -246,4 +248,8 @@ input {
   width: 80px;
   margin-top: 80px;
   margin-left: 0px;
+}
+
+.card {
+  margin-top: 180px;
 }
