@@ -10,6 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/rocks', rockController.viewAll);
 router.get('/viewRocks/view/:id', rockController.viewRock);
 router.get('/add', rockController.renderAddForm)
+router.get('/viewRocks/edit/:id', rockController.renderEditForm)
 
 router.get('/register', userController.renderRegistrationForm);
 router.post('/register', userController.register);

@@ -87,8 +87,14 @@ a {
 }
 
 .button {
+  height: 10px;
   text-decoration: none;
   color: black;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: row;
+  width: 10px;
+  max-width: 20%;
 }
 .cardbody {
   height: 360px;
@@ -118,6 +124,7 @@ a {
   font-family: "Bahnschrift";
   text-decoration: none;
   color: black;
+  width: 200px;
 }
 
 .product_name{
@@ -128,6 +135,7 @@ a {
   font-weight: bolder;
   text-decoration: none;
   color: black;
+  width: 200px;
 }
 
 .description{
@@ -173,7 +181,7 @@ input {
 }
 
 .desc{
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 600px;
   font-family: "Bahnschrift";
   font-size: 12px;
@@ -182,7 +190,7 @@ input {
 .desc1 {
   font-family: "Bahnschrift";
   font-size: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 10px;
   margin-left: 600px;
   background-color: #efefef;
@@ -195,7 +203,7 @@ input {
 }
 
 .theprice {
-  margin-right: 10px;
+  margin-right: 15px;
   margin-left: 10px;
   margin-top: -18px;
   font-family: "Bahnschrift";
@@ -210,8 +218,8 @@ input {
 /*}*/
 
 .perton {
-  margin-top: -19px;
-  margin-left: 35px;
+  margin-top: -18px;
+  margin-left: 25px;
   font-family: "Bahnschrift";
   font-size: 15px;
   font-weight: bold;
@@ -252,4 +260,21 @@ input {
 
 .card {
   margin-top: 180px;
+  font-size: 1px;
+}
+
+.for {
+  margin-top: -18px;
+  margin-left: 40px;
+  font-weight: bold;
+}
+
+.submit64 {
+  height: 30px;
+  width: 70px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-flow: row;
+  margin-top: 10px;
+  margin-right: 10px;
 }

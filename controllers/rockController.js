@@ -16,15 +16,32 @@ module.exports.viewRock= async function(req, res){
 }
 
 
-
+module.exports.renderEditForm = async function(req, res){
+    const rock = await Rock.findByPk(req.params.id);
+    res.render('viewRocks/edit', {rock});
+}
 
 
 module.exports.renderAddForm = function(req, res){
     const rock = {
-        creator_name: '',
-        product_name: '',
+        seller: '',
+        product: '',
         image: '',
         description: '',
+        price: '',
+        weightvolume: '',
     }
+    res.render('viewRocks/add', rock);
+}
+
+module.exports.updateCourse = async function(req, res){
+    const rock = await Rock.Update({
+        seller: '',
+        product: '',
+        image: '',
+        description: '',
+        price: '',
+        weightvolume: '',
+    })
     res.render('viewRocks/add', rock);
 }

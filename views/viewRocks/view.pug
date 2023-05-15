@@ -9,9 +9,14 @@ block content
                 div.seller2= rock.seller
             div.sign $
                 div.theprice= rock.price
-                    div.perton per ton
+                    div.for for
+                        div.perton= rock.weightvolume
             div.desc Description:
             div.desc1
                 div.desc2= rock.description
+
+    a.goback2(href=`/viewRocks/edit/${rock.id}`)
+        button.gobackbutton Edit
+
     a.goback2(href="/rocks")
         button.gobackbutton Go Back

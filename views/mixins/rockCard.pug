@@ -12,6 +12,10 @@ mixin rockCard(rock, buttonText, saveUrl, cancelUrl, deleteUrl)
                 input(id='product' name='product' value= rock.product)
 
             div.form-input
+                label(for='price') Price
+                input(id='price' name='price' value= rock.price)
+
+            div.form-input
                 label(for='image') Image
                 input(id='image' name='image' value= rock.image)
 
@@ -19,6 +23,11 @@ mixin rockCard(rock, buttonText, saveUrl, cancelUrl, deleteUrl)
                 label(for='description') Description
                 input(id='description' name='description' value= rock.description)
 
-            div.form-buttons
-                button.button(href=cancelUrl) Cancel
-                button.button.primary(type='submit') Save
+            div.form-input
+                label(for='weightvolume') Weight Or Volume
+                input(id='weightvolume' name='weightvolume' value= rock.weightvolume)
+
+
+            div.submit64
+                button.submit64(href=`${rock.id}`) Cancel
+                button.submit64(type='submit') Save
