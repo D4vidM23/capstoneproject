@@ -21,6 +21,23 @@ module.exports.renderEditForm = async function(req, res){
     res.render('viewRocks/edit', {rock});
 }
 
+module.exports.updateRock = async function(req, res){
+    const rock = await Rock.update({
+        seller: req.body.seller,
+        product: req.body.product,
+        image: req.body.image,
+        description: req.body.description,
+        price: req.body.price,
+        weightvolume: req.body.weightvolume,
+        }, {
+        where: {
+            id: req.params.id
+        }
+        });
+    res.redirect (`/viewRocks/view/${req.params.id}`);
+}
+
+
 
 module.exports.renderAddForm = function(req, res){
     const rock = {
@@ -34,14 +51,3 @@ module.exports.renderAddForm = function(req, res){
     res.render('viewRocks/add', rock);
 }
 
-module.exports.updateCourse = async function(req, res){
-    const rock = await Rock.Update({
-        seller: '',
-        product: '',
-        image: '',
-        description: '',
-        price: '',
-        weightvolume: '',
-    })
-    res.render('viewRocks/add', rock);
-}

@@ -15,8 +15,10 @@ block content
             div.desc1
                 div.desc2= rock.description
 
+    a.goback2(href="/rocks")
+        button.gobackbutton Go Back
+
     a.goback2(href=`/viewRocks/edit/${rock.id}`)
         button.gobackbutton Edit
 
-    a.goback2(href="/rocks")
-        button.gobackbutton Go Back
+

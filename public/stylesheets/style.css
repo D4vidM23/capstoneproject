@@ -110,9 +110,9 @@ a {
 }
 
 .image {
-  margin-bottom: -20px;
+  margin-bottom: 0px;
   margin-left: -325px;
-  height: 200px;
+  height: 180px;
   width: 260px;
   border-radius: 15px;
 }

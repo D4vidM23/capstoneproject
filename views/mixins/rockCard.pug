@@ -12,7 +12,7 @@ mixin rockCard(rock, buttonText, saveUrl, cancelUrl, deleteUrl)
                 input(id='product' name='product' value= rock.product)
 
             div.form-input
-                label(for='price') Price
+                label(for='price') Price (Numbers Only)
                 input(id='price' name='price' value= rock.price)
 
             div.form-input
@@ -29,5 +29,5 @@ mixin rockCard(rock, buttonText, saveUrl, cancelUrl, deleteUrl)
 
 
             div.submit64
-                button.submit64(href=`${rock.id}`) Cancel
+                button.submit64(href=cancelUrl) Cancel
                 button.submit64(type='submit') Save
