@@ -1,14 +1,17 @@
-const {User} = require('../models');
+const {Role} = require('../models');
 const md5 = require('md5');
 // const passport = require('passport');
 
 module.exports.renderRegistrationForm = async function(req, res) {
-    res.render('users/register');
+    const roles = await Role.findAll();
+    res.render('users/register', {
+        roles
+    });
 }
 
 
 module.exports.register = async function(req, res){
-    await User.create({
+    await Role.create({
         first_name: req.body.first_name,
         last_name:req.body.last_name,
         email:req.body.email,

@@ -3,7 +3,7 @@ extends ../layout
 block content
 
     div.content
-        div.form-header Register
+        div.form-header1 Register
         div
             form(action='/register' method="post")
                 div.input-form-row
@@ -22,5 +22,6 @@ block content
                         input(type="text" name="password" id="password" required=true)
                         div.helper-text Must be 8-20 characters long
 
-                    button.button(href='/') Cancel
-                    button.button.primary(type="submit") Register
+                    div.submit64
+                        button.submit64(href=cancelUrl) Cancel
+                        button.submit64(type='submit') Save
