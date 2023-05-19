@@ -57,6 +57,23 @@ a {
   flex-wrap: wrap;
 }
 
+.dropdowns1 {
+  background-color: #39404d;
+  color: ghostwhite;
+  padding: 15px;
+  margin-top: -20px;
+  margin-bottom: 10px;
+  margin-left: -60px;
+  width: 2000px;
+  height: 12px;
+  font-size: 15px;
+  font-family: "Bahnschrift";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
 .customerservice {
   margin-right: 40px;
   color: ghostwhite;
@@ -81,7 +98,7 @@ a {
   text-decoration: none;
   font-weight: bolder;
   color: black;
-  margin-top: 500px;
+  margin-top: 200px;
   height: 20px;
   width: 80px;
 }

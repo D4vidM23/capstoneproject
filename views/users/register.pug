@@ -4,8 +4,15 @@ block content
 
     div.content
         div.form-header1 Register
+        div.dropdowns1
+            a(href="/rocks").contact View Rocks
+            a(href="service").customerservice Customer Service
+            a(href="service").contact Contact
+
+
+
         div
-            form(action='/register' method="post")
+            form(action='/register' method="POST")
                 div.input-form-row
                     div.input-containter
                         label(for="first_name").form-label First Name
@@ -22,6 +29,16 @@ block content
                         input(type="text" name="password" id="password" required=true)
                         div.helper-text Must be 8-20 characters long
 
-                    div.submit64
-                        button.submit64(href=cancelUrl) Cancel
-                        button.submit64(type='submit') Save
+                    div.input-containter
+                        label(for="role").form-label Role
+                        select(id="role" name="role")
+                            each role in roles
+                                option(value=role.id) #{role.name}
+
+
+
+
+                    button.gobackbutton(type="submit") Register
+
+
+

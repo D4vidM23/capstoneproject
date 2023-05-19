@@ -14,7 +14,7 @@ router.get('/viewRocks/edit/:id', rockController.renderEditForm);
 router.post('/viewRocks/edit/:id', rockController.updateRock);
 
 router.get('/register', userController.renderRegistrationForm);
-router.post('/register', userController.register);
+router.post('/register', userController.registerUser);
 
 router.get('/service', rockController.viewService)
 module.exports = router;
