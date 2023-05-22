@@ -1,10 +1,38 @@
+//doctype html
+//html
+//  head
+//    title= title
+//    link(rel='stylesheet', href='/stylesheets/style.css')
+//  body
+//    div.container
+//      block content
+
 doctype html
 html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+
+    nav
+      div.container
+
+        h3 User Permissions
+        ul.nav.justify-content-end.main-nav
+        if user
+            li.nav-item
+              a.nav-link(href="/") Dashboard
+            li.nav-item
+              a.nav-link(href="/marketing") Marketing
+            li.nav-item
+              a.nav-link(href="/sales") Sales
+            li.nav-item
+            a.nav-link(href="profile") Hello #{user.first_name}
+        else
+          li.nav-item
+            a.nav-link(href="/login") Login
+          li.nav-item
+            a.nav-link(href="/register") Register
+
     div.container
       block content
-
-

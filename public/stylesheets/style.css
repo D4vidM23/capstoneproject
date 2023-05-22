@@ -310,3 +310,14 @@ input {
   font-size: 30px;
   margin-bottom: 20px;
 }
+
+.already {
+  padding: 10px;
+  font-family: "Bahnschrift";
+}
+
+.loginbutton {
+  margin-left: 5px;
+}
+
+

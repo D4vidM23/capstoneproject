@@ -1,0 +1,33 @@
+extends ../layout
+
+block content
+
+    div.content
+        div.form-header1 Login
+        div.dropdowns1
+            a(href="/").contact Menu
+            a(href="/rocks").contact View Rocks
+            a(href="service").customerservice Customer Service
+            a(href="service").contact Contact
+
+
+        div
+            form(action='/login' method='POST')
+                div.input-containter.wide
+                    label(for="email").form-label Email
+                    input(type="email" name="email" id="email" required=true)
+
+                div.input-container
+                    label(for='password').form-label Password
+                    input(type='password' name='password' id='password' required=true)
+
+
+                button.gobackbutton(type='submit') Login
+                h.already Don't have an account?
+                    a.loginbutton(href="/register") Register
+
+            if errors.length
+                div
+                    ul
+                        each error in errors
+                            li=error
