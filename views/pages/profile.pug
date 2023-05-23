@@ -8,3 +8,6 @@ block content
         ul
             each permission in user.role.permissions
                 li=permission.name
+
+    a.goback2(href="/rocks")
+        button.gobackbutton Go Back

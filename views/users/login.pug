@@ -27,7 +27,7 @@ block content
                     a.loginbutton(href="/register") Register
 
             if errors.length
-                div
+                div.error
                     ul
                         each error in errors
                             li=error

@@ -22,7 +22,7 @@ module.exports.registerUser = async function(req, res){
 
 module.exports.renderLoginForm = async function(req, res) {
     const errors = req.session.messages || [];
-    res.render('users/login')
+    res.render('users/login',{errors})
 }
 
 module.exports.loginUser = passport.authenticate('local', {
