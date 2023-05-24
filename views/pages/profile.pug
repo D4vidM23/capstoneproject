@@ -2,12 +2,13 @@ extends ../layout
 
 block content
     div.content
-        h1 Your role is #{user.role.name}
-
-        h3 You can
-        ul
-            each permission in user.role.permissions
-                li=permission.name
+        a.goback2(href="/logout")
+        //h1 Your role is #{user.role.name}
+        //
+        //h3 You can
+        //ul
+        //    each permission in user.role.permissions
+        //        li=permission.name
 
     a.goback2(href="/rocks")
         button.gobackbutton Go Back

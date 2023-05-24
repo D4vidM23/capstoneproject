@@ -31,9 +31,9 @@ module.exports.loginUser = passport.authenticate('local', {
     failureMessage: true
 });
 
-// module.exports.logout = function(req, res){
-//     req.logout();
-//     res.redirect('/login');
-// }
+module.exports.logout = function(req, res){
+    req.logout();
+    res.redirect('/login');
+}
 
 

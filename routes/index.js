@@ -3,6 +3,7 @@ var router = express.Router();
 const rockController = require('../controllers/rockController.js');
 const userController =require('../controllers/userController.js');
 const pageController =require('../controllers/pageController.js');
+const redirectGuests = require('../middleware/redirectGuests')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
@@ -18,6 +19,7 @@ router.get('/register', userController.renderRegistrationForm);
 router.post('/register', userController.registerUser);
 router.get('/login', userController.renderLoginForm);
 router.post('/login', userController.loginUser);
+router.get('/logout', userController.logout);
 
 router.get('/profile', pageController.viewProfile);
 
