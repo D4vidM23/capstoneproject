@@ -15,6 +15,8 @@ module.exports = (sequelize, DataTypes) => {
                 as: 'role',
                 foreignKey:'role_id'
             })
+        }is(role){
+            return this.role.role_name === role;
         }
     };
     User.init({

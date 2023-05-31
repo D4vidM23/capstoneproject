@@ -12,6 +12,9 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
     }
+    isOwnedBy(user){
+      return this.seller_id === user.id
+    }
   }
   Rock.init({
     seller: DataTypes.STRING,
