@@ -10,6 +10,11 @@ module.exports.viewService = async function (req, res) {
     res.render('misc/customerService', {rocks});
 };
 
+module.exports.viewContact = async function (req, res) {
+    const rocks = await Rock.findAll();
+    res.render('misc/contact', {rocks});
+};
+
 module.exports.viewRock= async function(req, res){
     const rock = await Rock.findByPk(req.params.id);
     res.render(`viewRocks/view`, {rock});
@@ -40,7 +45,7 @@ module.exports.updateRock = async function(req, res){
 
 
 module.exports.renderAddForm = function(req, res){
-    const rock = {
+    const rocks = {
         seller: '',
         product: '',
         image: '',
@@ -48,6 +53,25 @@ module.exports.renderAddForm = function(req, res){
         price: '',
         weightvolume: '',
     }
-    res.render('viewRocks/add', rock);
+    res.render('viewRocks/add', rocks);
 }
+
+
+module.exports.addRock = async function(req, res){
+    const rock = await Rock.create({
+        seller: req.body.seller,
+        product: req.body.product,
+        image: req.body.image,
+        description: req.body.description,
+        price: req.user.price,
+        weightvolume: req.user.weightvolume,
+    });
+    res.redirect('/')
+}
+
+module.exports.viewSales = function (req, res) {
+    res.render('pages/sales');
+};
+
+
 

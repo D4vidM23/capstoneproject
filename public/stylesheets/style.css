@@ -348,3 +348,13 @@ input {
   margin-left: 60px;
   margin-top: -35px;
 }
+
+.sale {
+  height: 400px;
+  width: 650px;
+}
+
+.sell {
+  font-family: Bahnschrift;
+  font-size: 60px;
+}

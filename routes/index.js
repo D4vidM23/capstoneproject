@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/rocks', rockController.viewAll);
 router.get('/viewRocks/view/:id', rockController.viewRock);
-router.get('/add', rockController.renderAddForm)
+router.get('/add', rockController.renderAddForm);
+router.post('/add', rockController.addRock);
 router.get('/viewRocks/edit/:id', rockController.renderEditForm);
 router.post('/viewRocks/edit/:id', rockController.updateRock);
 
@@ -22,6 +23,9 @@ router.post('/login', userController.loginUser);
 router.get('/logout', userController.logout);
 
 router.get('/profile', pageController.viewProfile);
+router.get('/sales', rockController.viewSales);
+
 
 router.get('/service', rockController.viewService)
+router.get('/contact', rockController.viewContact)
 module.exports = router;
